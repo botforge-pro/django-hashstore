@@ -1,0 +1,27 @@
+[build-system]
+requires = ['setuptools>=68']
+build-backend = 'setuptools.build_meta'
+
+[project]
+name = 'django-hashstore'
+version = '0.1.0'
+description = 'Django file storage that names a file after the digest of its content'
+readme = 'README.md'
+requires-python = '>=3.10'
+license = { text = 'MIT' }
+dependencies = ['Django>=5.1']
+classifiers = [
+    'Framework :: Django',
+    'License :: OSI Approved :: MIT License',
+    'Programming Language :: Python :: 3',
+]
+
+[project.urls]
+Source = 'https://github.com/botforge-pro/django-hashstore'
+
+[tool.setuptools.packages.find]
+include = ['django_hashstore*']
+
+[tool.pytest.ini_options]
+DJANGO_SETTINGS_MODULE = 'tests.settings'
+pythonpath = ['.']
