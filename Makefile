@@ -2,7 +2,7 @@
 
 install:
 	python3 -m venv .venv
-	.venv/bin/pip install -e '.[dev]' pytest pytest-django ruff build
+	.venv/bin/pip install -e '.[dev]'
 
 format:
 	.venv/bin/ruff format django_hashstore tests
@@ -17,6 +17,9 @@ test-build:
 
 test:
 	.venv/bin/pytest
+
+docs:
+	.venv/bin/pdoc django_hashstore -o build/docs
 
 build:
 	.venv/bin/python3 -m build

@@ -1,3 +1,6 @@
+[![Tests](https://github.com/botforge-pro/django-hashstore/actions/workflows/tests.yml/badge.svg)](https://github.com/botforge-pro/django-hashstore/actions/workflows/tests.yml)
+[![Documentation](https://github.com/botforge-pro/django-hashstore/actions/workflows/documentation.yml/badge.svg)](https://botforge-pro.github.io/django-hashstore/django_hashstore.html)
+
 # django-hashstore
 
 A Django file storage that names a file after the digest of its content.
@@ -64,6 +67,10 @@ of its own.
 ```
 pip install git+https://github.com/botforge-pro/django-hashstore@v0.1.0
 ```
+
+## Documentation
+
+The [API reference](https://botforge-pro.github.io/django-hashstore/django_hashstore.html) is generated from the public Python API and deployed by GitHub Actions.
 
 ## Develop
 

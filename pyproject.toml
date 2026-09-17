@@ -16,6 +16,9 @@ classifiers = [
     'Programming Language :: Python :: 3',
 ]
 
+[project.optional-dependencies]
+dev = ['pytest', 'pytest-django', 'ruff', 'build', 'pdoc>=16.0']
+
 [project.urls]
 Source = 'https://github.com/botforge-pro/django-hashstore'
 
